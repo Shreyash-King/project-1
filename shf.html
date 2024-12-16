@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocketech - Your Tech Shopping Destination</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="shreyash.jpg (3).jpg"
+                 alt="Pocketech Logo" class="logo-img">
+                <h1>Pocketech</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-items">
+                <a href="categories/electronics.html">Electronics</a>
+                <a href="categories/mobiles.html">Mobiles</a>
+                <a href="categories/laptops.html">Laptops</a>
+                <a href="categories/accessories.html">Accessories</a>
+                <div class="user-menu">
+                    <a href="login.html" id="loginLink"><i class="fas fa-user"></i> Login</a>
+                    <a href="#" id="userProfile" style="display: none;">
+                        <i class="fas fa-user"></i> <span id="userName"></span>
+                    </a>
+                    <a href="#" id="logoutBtn" style="display: none;" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categories">
+            <div class="category-item">
+                <a href="categories/electronics.html">
+                    <img src="https://rukminim2.flixcart.com/flap/128/128/image/69c6589653afdb9a.png" alt="Electronics">
+                    <span>Electronics</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="categories/mobiles.html">
+                    <img src="https://rukminim2.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png" alt="Mobiles">
+                    <span>Mobiles</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="categories/laptops.html">
+                    <img src="https://rukminim2.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png" alt="Laptops">
+                    <span>Laptops</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="categories/accessories.html">
+                    <img src="https://rukminim2.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png" alt="Accessories">
+                    <span>Accessories</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="discount">20% OFF</span>
+                    <span class="stock-status">In Stock</span>
+                    <a href="https://www.flipkart.com/apple-iphone-14-midnight-128-gb/p/itm9e6293c322a84" target="_blank">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg" alt="iPhone 14">
+                        <h3>Apple iPhone 14 (128GB)</h3>
+                        <p class="price">
+                            <span class="original-price">₹72,999</span>
+                            ₹58,999
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(2,345 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Buy Now</button>
+                    </a>
+                </div>
+
+                <div class="product-card">
+                    <span class="discount">15% OFF</span>
+                    <span class="stock-status">Few Left</span>
+                    <a href="https://www.flipkart.com/hp-pavilion-ryzen-5-hexa-core-5625u-16-gb-512-gb-ssd-windows-11-home-14-ec1003au-thin-light-laptop/p/itm88c4a7f0d9a95" target="_blank">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/v/y/z/-original-imagtucmkuwggepy.jpeg" alt="HP Pavilion Laptop">
+                        <h3>HP Pavilion Ryzen 5</h3>
+                        <p class="price">
+                            <span class="original-price">₹58,990</span>
+                            ₹49,990
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(1,129 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Buy Now</button>
+                    </a>
+                </div>
+
+                <div class="product-card">
+                    <span class="discount">25% OFF</span>
+                    <span class="stock-status">Limited Stock</span>
+                    <a href="https://www.flipkart.com/apple-airpods-pro-2nd-generation-active-noise-cancellation-bluetooth-headset/p/itm4c2b1e95b85f8" target="_blank">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/headphone/p/r/z/airpods-pro-2nd-generation-apple-original-imagh4wbdzdngvz4.jpeg" alt="AirPods Pro">
+                        <h3>Apple AirPods Pro (2nd Gen)</h3>
+                        <p class="price">
+                            <span class="original-price">₹33,999</span>
+                            ₹24,999
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(3,789 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Buy Now</button>
+                    </a>
+                </div>
+
+                <div class="product-card">
+                    <span class="discount">10% OFF</span>
+                    <span class="stock-status">Best Seller</span>
+                    <a href="https://www.flipkart.com/samsung-galaxy-s23-ultra-5g-green-256-gb/p/itm77dc35f7179b6" target="_blank">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/2/s/7/-original-imagmg6gktts6sfy.jpeg" alt="Samsung S23 Ultra">
+                        <h3>Samsung Galaxy S23 Ultra</h3>
+                        <p class="price">
+                            <span class="original-price">₹139,999</span>
+                            ₹124,999
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(1,856 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Pocketech</h3>
+                <p>Your one-stop destination for all tech needs</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: shreyash.gage@gmail.com</p>
+                <p>Phone: +91 7972904911</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=shreyashgage&trk=public_profile_bottom-cta-banner" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pocketech. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
